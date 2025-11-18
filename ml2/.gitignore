@@ -1,0 +1,6 @@
+*.mp4
+*.avi
+*.mov
+uploaded_videos/
+dashboard/data/*.mp4
+data/raw_videos/*.mp4

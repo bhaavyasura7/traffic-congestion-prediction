@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Grid Watch</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ...existing code... */
+  </style>
+</head>
+
+<body>
+  <!-- ...existing code... -->
+
+  <div class="container">
+    <header>
+      <h1>Urban Grid <span class="highlight">Watch</span></h1>
+      <p class="subtitle">
+        Leveraging Computer Vision and Machine Learning to Deliver Real-Time
+        Traffic Monitoring, Predictive Congestion Analytics, and Smarter Urban
+        Mobility Solutions
+      </p>
+    </header>
+
+    <section class="stats-row" style="gap: 2.5rem; margin-bottom: 2.5rem">
+      <!-- Current hour confidence and congestion level -->
+      <div class="stat-box" id="currentStats"
+        style="min-width: 320px; display: flex; align-items: center; gap: 1.5rem;">
+        <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+          <div class="stat-title" style="font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 1.5rem;">⏰</span> Current Hour
+          </div>
+          <div class="stat-value" id="currentConfidence"
+            style="font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 1.5rem; color: #1976d2;">🔵</span> Confidence: --
+          </div>
+          <div class="stat-value" id="currentCongestion"
+            style="font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 1.5rem; color: #43a047;">🌤️</span> Congestion Level: --
+          </div>
+        </div>
+      </div>
+      <div class="stat-box upload-box" style="min-width: 320px">
+        <div style="
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              margin-bottom: 0.5rem;
+            ">
+          <span class="stat-icon" style="font-size: 2.2rem">⬆️</span>
+          <div class="stat-title" style="font-size: 1.1rem">
+            Upload Traffic Video
+          </div>
+        </div>
+        <input type="file" id="videoInput" style="margin-bottom: 1rem" />
+        <button id="uploadBtn" class="btn" style="width: 100%; font-size: 1.1rem">
+          Upload Video
+        </button>
+        <div id="videoStatus" style="margin-top: 1rem; font-size: 1.1rem"></div>
+      </div>
+    </section>
+
+    <nav class="main-nav">
+      <button class="nav-btn active" id="predictionBtn">
+        Traffic Predication
+      </button>
+    </nav>
+
+    <main>
+      <section class="prediction-section">
+        <h2>Traffic Prediction for Today</h2>
+        <p class="desc">
+          Easy-to-understand traffic forecasts with time ranges
+        </p>
+        <div class="cards-row" id="predictionCards">
+          <!-- Cards will be injected by JS -->
+        </div>
+      </section>
+
+      <section class="charts-row">
+        <div class="chart-box">
+          <h3>Traffic Confidence Prediction</h3>
+          <canvas id="congestionChart"></canvas>
+        </div>
+        <div class="chart-box">
+          <h3>Model Performance</h3>
+          <div class="performance-metrics" id="performanceMetrics">
+            <!-- Metrics will be injected by JS -->
+          </div>
+        </div>
+      </section>
+
+      <section class="monitor-section" style="display: none">
+        <div class="monitor-row">
+          <div class="chart-box">
+            <h3>Traffic flow</h3>
+            <canvas id="flowChart"></canvas>
+          </div>
+          <div class="chart-box">
+            <h3>Vehicle Detection</h3>
+            <div class="vehicle-detection" id="vehicleDetection"></div>
+          </div>
+        </div>
+        <div class="video-box">
+          <h2>Live Vehicle Detection</h2>
+          <video id="video-stream" src="/dashboard/data/detected_output.mp4" width="720" controls loop autoplay
+            muted></video>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

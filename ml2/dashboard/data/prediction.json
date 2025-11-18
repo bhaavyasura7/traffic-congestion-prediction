@@ -1,0 +1,32 @@
+[
+    {
+        "predict_hour": 0,
+        "congestion_level": "Very Light",
+        "confidence": 0.572429
+    },
+    {
+        "predict_hour": 1,
+        "congestion_level": "Very Light",
+        "confidence": 0.562429
+    },
+    {
+        "predict_hour": 2,
+        "congestion_level": "High",
+        "confidence": 0.593905
+    },
+    {
+        "predict_hour": 3,
+        "congestion_level": "Very Light",
+        "confidence": 0.580095
+    },
+    {
+        "predict_hour": 4,
+        "congestion_level": "High",
+        "confidence": 0.777476
+    },
+    {
+        "predict_hour": 5,
+        "congestion_level": "Very Light",
+        "confidence": 0.572429
+    }
+]

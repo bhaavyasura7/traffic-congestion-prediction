@@ -1,0 +1,67 @@
+{
+  "model_performance": {
+    "mean_squared_error": 0.037,
+    "r2_score": 0.9699,
+    "precision_score": 0.9683,
+    "recall_score": 0.963,
+    "f1_score": 0.963
+  },
+  "feature_importances": {
+    "Car": 0.1655,
+    "Bike": 0.0925,
+    "Truck": 0.0964,
+    "Auto": 0.0149,
+    "Bus": 0.0465,
+    "Weighted Count": 0.5841
+  },
+  "prediction_statistics": {
+    "average_error": 0.04,
+    "min_error": 0.0,
+    "max_error": 1.0,
+    "average_confidence": 0.79
+  },
+  "prediction_distribution": [
+    {
+      "class": 0,
+      "count": 5,
+      "percentage": 18.52
+    },
+    {
+      "class": 1,
+      "count": 7,
+      "percentage": 25.93
+    },
+    {
+      "class": 2,
+      "count": 6,
+      "percentage": 22.22
+    },
+    {
+      "class": 3,
+      "count": 9,
+      "percentage": 33.33
+    }
+  ],
+  "actual_label_distribution": [
+    {
+      "class": 0,
+      "count": 5,
+      "percentage": 18.52
+    },
+    {
+      "class": 1,
+      "count": 6,
+      "percentage": 22.22
+    },
+    {
+      "class": 2,
+      "count": 7,
+      "percentage": 25.93
+    },
+    {
+      "class": 3,
+      "count": 9,
+      "percentage": 33.33
+    }
+  ]
+}

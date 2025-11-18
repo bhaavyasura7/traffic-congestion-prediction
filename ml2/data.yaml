@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['auto', 'bike-auto']
+
+roboflow:
+  workspace: bhaavya
+  project: traffic-detection-new
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/bhaavya/traffic-detection-new/dataset/1
